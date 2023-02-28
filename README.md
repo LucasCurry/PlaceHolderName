@@ -6,3 +6,4 @@ Planen är att skapa en veterinärsida där vi har en hemsida som länkar vidare
 
 
 ![(untitled) - E-commerce category page wireframe](https://user-images.githubusercontent.com/31371140/221822004-951fede7-0b73-4b76-afea-4acfcd4aa795.png)
+![image](https://user-images.githubusercontent.com/31371140/221824793-3393ad0d-ef03-4a43-9807-eb3fc4d2ea31.png)
