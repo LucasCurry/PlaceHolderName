@@ -1,31 +1,22 @@
 package com.example.demo;
 
 public class Dog {
-    private int age;
     private String name;
+    private int age;
     private AdoptionStatus status;
     private AgeCategory ageCategory;
     private int id;
     private Breed breed;
     private String description;
 
-    public Dog(int age, String name, AdoptionStatus status, AgeCategory ageCategory, int id, Breed breed) {
-        this.age = age;
+    public Dog(String name, int age,AdoptionStatus status, AgeCategory ageCategory, int id, Breed breed) {
         this.name = name;
+        this.age = age;
         this.status = status;
         this.ageCategory = ageCategory;
         this.id = id;
         this.breed = breed;
         this.description = "I am a dog, woof woof!";
-    }
-
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public String getName() {
@@ -34,6 +25,14 @@ public class Dog {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public AdoptionStatus getStatus() {
