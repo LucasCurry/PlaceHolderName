@@ -5,16 +5,16 @@ public class Dog {
     private String name;
     private AdoptionStatus status;
     private AgeCategory ageCategory;
-    private String color;
+    private int id;
     private Breed breed;
     private String description;
 
-    public Dog(int age, String name, AdoptionStatus status, AgeCategory ageCategory, String color, Breed breed) {
+    public Dog(int age, String name, AdoptionStatus status, AgeCategory ageCategory, int id, Breed breed) {
         this.age = age;
         this.name = name;
         this.status = status;
         this.ageCategory = ageCategory;
-        this.color = color;
+        this.id = id;
         this.breed = breed;
         this.description = "I am a dog, woof woof!";
     }
@@ -52,12 +52,12 @@ public class Dog {
         this.ageCategory = ageCategory;
     }
 
-    public String getColor() {
-        return color;
+    public int getID() {
+        return id;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Breed getBreed() {
