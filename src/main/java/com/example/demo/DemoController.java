@@ -14,7 +14,7 @@ public class DemoController {
 
     @Autowired
     private DogRepository dogRepository;
-    private static final int PAGE_SIZE = 2;
+    private static final int PAGE_SIZE = 8;
 
     @GetMapping("/")
     public String index(Model model) {

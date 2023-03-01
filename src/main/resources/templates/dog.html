@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8"></meta>
-  <title>Book</title>
+    <meta charset="UTF-8"></meta>
+    <title>Happy Dogs</title>
+    <link rel="icon" type="image/x-icon" href="happy.png">
 </head>
 <body>
-<h1>Book</h1>
+<h1 th:text="${dog.name}"></h1>
 <table>
-  <tr>
-    <th>Name</th>
-    <th th:text="${dog.name}"></th>
-  </tr>
-  <tr>
-    <th>Age</th>
-    <th th:text="${dog.age}"></th>
-  </tr>
-  <tr>
-    <th>Adoption status</th>
-    <th th:text="${dog.status}"></th>
-  </tr>
-  <tr>
-    <th>Breed</th>
-    <th th:text="${dog.Breed}"></th>
-  </tr>
+    <tr>
+        <th>Name</th>
+        <th th:text="${dog.name}"></th>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <th th:text="${dog.age}"></th>
+    </tr>
+    <tr>
+        <th>Adoption status</th>
+        <th th:text="${dog.status}"></th>
+    </tr>
+    <tr>
+        <th>Breed</th>
+        <th th:text="${dog.Breed}"></th>
+    </tr>
 </table>
 </body>
 </html>
