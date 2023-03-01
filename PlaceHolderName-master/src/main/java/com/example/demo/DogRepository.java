@@ -13,6 +13,7 @@ public class DogRepository {
         dogs.add(new Dog("Simba", 10, "Brown", AdoptionStatus.AVAILABLE, AgeCategory.ADULT, 2, Breed.LABRADOR, "test.jpg", "The dog"));
         dogs.add(new Dog("Tintin", 3, "Brown", AdoptionStatus.AVAILABLE, AgeCategory.ADULT, 3, Breed.LABRADOR, "test.jpg", "The dog"));
         dogs.add(new Dog("Freddie", 4, "Brown", AdoptionStatus.AVAILABLE, AgeCategory.ADULT, 4, Breed.LABRADOR, "test.jpg", "The dog"));
+        dogs.add(new Dog("Charlie", 2, "Grey", AdoptionStatus.AVAILABLE, AgeCategory.PUPPY, 5, Breed.BORZOI, "test.jpg", "The dog"));
     }
 
     public Dog getDog(int id) {
