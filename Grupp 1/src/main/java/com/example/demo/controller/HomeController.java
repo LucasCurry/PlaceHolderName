@@ -17,16 +17,18 @@ public class HomeController {
 
     @GetMapping("/")
     public String frontPage(Model model){
-
-
-
-
         return "index";
     }
 
-    @GetMapping("/dogs")
+    @GetMapping("/dogs.html")
     public String Dogs(Model model){
         return "dogs";
+    }
+
+
+    @GetMapping("/dog.html")
+    public String getDog(Model model){
+        return "dog";
     }
 
 
