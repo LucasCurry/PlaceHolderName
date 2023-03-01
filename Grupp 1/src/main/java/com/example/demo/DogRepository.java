@@ -8,6 +8,7 @@ import java.util.List;
 
 @Service
 public class DogRepository {
+
     List<Dog> dogs = new ArrayList<>();
 
 

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Use Bootstrap !-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     ...
 </head>
 <body>
@@ -21,17 +23,13 @@
     </div>
 </div>
 <div class="container">
-    <div class="hero-unit">
-        <h1>Test</h1>
-        <p>
-            Welcome to the Spring MVC Quickstart application!
-            Get started quickly by signing up.
-        </p>
-        <p>
-            <a href="/signup" th:href="@{/signup}" class="btn btn-large btn-success">Sign up</a>
-        </p>
-    </div>
 
+        <div class="card-deck">
+            <div  th:insert="~{/fragments :: dogCard('Bella', 'this is bella, she is a very good dog', '1')}"></div>
+            <div th:insert="~{/fragments :: dogCard('Bengt', 'this is bruno, he eats shoes', '2')}"></div>
+            <div th:insert="~{/fragments :: dogCard('Luna', 'luna really likes to bark', '3')}"></div>
+            <div th:insert="~{/fragments :: dogCard('Luna', 'luna really likes to bark', '3')}"></div>
+    </div>
 </div>
 ...
 </body>
