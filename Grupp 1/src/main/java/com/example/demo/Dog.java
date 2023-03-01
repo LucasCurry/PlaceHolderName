@@ -51,7 +51,7 @@ public class Dog {
         this.ageCategory = ageCategory;
     }
 
-    public int getID() {
+    public int getId() {
         return id;
     }
 
