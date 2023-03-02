@@ -2,11 +2,13 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"></meta>
-    <title>Happy Dogs</title>
-    <link rel="icon" type="image/x-icon" href="happy.png">
+    <title>Fatemas Jyckar</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/happy.png">
 </head>
 <body>
 <h1 th:text="${dog.name}"></h1>
+<img class="test" th:src="${dog.imageUrl}">
 <table>
     <tr>
         <th>Name</th>
@@ -23,6 +25,12 @@
     <tr>
         <th>Breed</th>
         <th th:text="${dog.Breed}"></th>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Description</th>
+        <th class="description" style="text-indent: 30px;" th:text="${dog.description}"></th>
     </tr>
 </table>
 </body>
